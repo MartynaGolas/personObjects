@@ -36,11 +36,19 @@ public class Person {
 
     //TODO
     // Implement toString() method.  Can also be auto generated.
+    public String toString()
+    {
+        return "{Name: " + this.name + ", address: " + this.address + ", age: " + this.age + "}";
+    }
 
 
     //TODO
     // Implement a print() method that simply prints the names
     // and values of each field in Person. Call print() from start().
+    public void print()
+    {
+        System.out.println("Name: " + this.name + "\nAddress: " + this.address + "\nAge: " + this.age);
+    }
 
 
 }

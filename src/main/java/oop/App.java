@@ -1,5 +1,7 @@
 package oop;
 
+import java.util.ArrayList;
+
 /**
  * Person App
  * Simple class to model a Person
@@ -51,6 +53,15 @@ public class App
         // Implement a toString( ) method in the Person class, and run this App again
         // to see how the toString() outputs the contents of the object properly.
 
+        ArrayList<Person> people = new ArrayList<>();
+        people.add(person1);
+        people.add(person2);
+
+        for(Person p : people)
+        {
+            p.toString();
+            p.print();
+        }
 
     }
 }
